@@ -1,0 +1,30 @@
+h1{
+    color: deeppink;
+    text-align: center;
+}
+body{
+    background-color: rosybrown;
+}
+#logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+li{
+    border-bottom: 6px solid purple;
+  background-color: palevioletred;
+width: 100px;
+    
+}
+    #cat{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+
+#dog{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
