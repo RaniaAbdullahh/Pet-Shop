@@ -7,6 +7,9 @@ console.log(greeting);
 var cond = prompt(" do you have a Pet?");
 var ans;
 
+while(cond !== "yes" && cond !=="no"){
+    cond = prompt(" do you have a Pet?"); 
+}
 
 
 if (cond == "yes") {
@@ -30,18 +33,42 @@ if (cond == "yes") {
     
     var userchoice;
 
-    if (userinput == "cat"){
+    while(userinput !== "cat" && userinput !=="dog"){
+        userinput = prompt("do you like cat or dog?"); 
+    }    
 
-        userchoice = "<img src='images/GettyImages-1199242002-1-1920x1080.jpg' alt=''>";
+    if (userinput === "cat"){
+
+        userchoice = "<img src='../images/GettyImages-1199242002-1-1920x1080.jpg' >";
+        console.log('userchoice',userchoice)
     }
-    else if (userinput == "dog"){
-        userchoice = "<img src='images/5ec6c6dc988ee362762f137b.jpg' alt=''>";
+    else if (userinput === "dog"){
+        userchoice ="<img src='../images/5ec6c6dc988ee362762f137b.jpg' >";
 
     }
-    return userchoice;
-
+    
+return userchoice;
 
     }
 
- 
+//  choice()
+function belt(){
 
+    var belt;
+    var userinput = prompt('do you like cat or dog?');
+
+    var beltnum = prompt("how many belt do you need?");
+    
+    for (var count = 0; count < beltnum ; count++){
+        if ( userinput == "dog"){
+            // document.write("<img src='../images/images.jpg' >");
+            belt = belt + "<img src='../images/images.jpg' >";
+        }
+        else if (userinput == "cat"){
+            // document.write("<img src='../images/catbelt.jpg'>")
+            belt = belt + "<img src='../images/catbelt.jpg'>"
+            
+        } 
+    }   
+    return belt;
+}
